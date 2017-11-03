@@ -1,0 +1,35 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.pages{
+  overflow-y: scroll;
+  background: #F5F5F5;
+
+}
+.sign{
+  background: #F5F5F5;
+  border: 1px solid red;
+}
+.editBody{
+  display: flex;
+}
+
+.imgWrap{
+  position: relative;
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+  margin: 20px 20px 20px 45px;
+  img{
+    width: 100%;
+  }
+}

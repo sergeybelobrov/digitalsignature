@@ -1,0 +1,54 @@
+@media (min-width: 1200px){
+  .container {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;      
+  }
+}
+
+@media (max-width: 1085px){
+  .rightSide {
+    flex-grow: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding:16px; 
+}
+
+.rightSide {
+  flex-basis: 556px;
+}
+
+.logoContainer {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-grow: 1;
+}
+
+.logo {
+  max-width: 500px;
+  width: 80%;
+  margin-top: 32px;
+}
+
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.secondRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.viewServicesBtn {
+  flex-grow: 0;
+  flex-basis: 120px;
+}
