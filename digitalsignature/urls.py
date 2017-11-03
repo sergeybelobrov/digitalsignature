@@ -38,7 +38,7 @@ router.register(r'template', views.TemplateViewSet, 'Template')
 router.register(r'party', views.PartyViewSet, 'Party')
 router.register(r'abstractParty', views.AbstractPartyViewSet, 'AbstractParty')
 router.register(r'abstractSignature', views.AbstractSignatureViewSet, 'AbstractSignature')
-router.register(r'signature', views.Signature, 'Signature')
+router.register(r'signature', views.SignatureViewSet, 'Signature')
 
 
 urlpatterns = [
@@ -50,7 +50,7 @@ urlpatterns = [
     url('^upload-pdf/', UploadPDFView.as_view()),
     url(f'{API_PREFIX}/', include('rest_framework.urls', namespace='api')),
     url(f'{API_PREFIX}/', include(router.urls)),
-    # url(f'{API_PREFIX}/', include('drf_openapi.urls')),
+    url(f'{API_PREFIX}/', include('drf_openapi.urls')),
 
 ]
 
